@@ -16,4 +16,4 @@ jobs:
     steps:
     -  name: this is my first step
        run: |
-        -  echo "building the application" > $GITHUB_OUTPUT
+        -  echo "building the application"
