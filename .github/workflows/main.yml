@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     -  name: this is my first step
-       run: |
-        -  echo "building the application"
+       run: 
+       - echo "building the application"
