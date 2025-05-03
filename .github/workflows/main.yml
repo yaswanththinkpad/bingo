@@ -1,0 +1,19 @@
+name: testing
+
+on:
+  push:
+    branches:
+    -  'main'
+
+  workflow_dispatch:
+    inputs:
+      build:
+        required: true
+        description: 'this is requried'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    -  name: this is my first step
+       run: |
+        -  echo "building the application" > $GITHUB_OUTPUT
